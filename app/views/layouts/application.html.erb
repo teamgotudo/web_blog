@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
-    <%= csrf_meta_tags %>
+    <title>Faisal Ansari - Part Designer, Part Developer</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header id="main-navigation" class="clearfix">
+			<a href = "#" class = "name">
+				Faisal Ansari
+			</a>
+			<nav>
+        
+				<a href="articles.html">Articles</a>
+				<a href="#">Projects</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
     <%= yield %>
   </body>
 </html>
